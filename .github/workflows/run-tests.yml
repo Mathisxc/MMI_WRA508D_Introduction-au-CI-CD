@@ -52,3 +52,9 @@ jobs:
         with:
           name: application-build
           path: build.tar.gz
+          
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: symfony-artifact
+          path: symfony-artifact-r1.tar.gz
